@@ -1,0 +1,125 @@
+/* Background pattern from Toptal Subtle Patterns */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("image/greyzz.png");
+    font-size: 14px;
+}
+#navBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: #eb3123;
+    border-bottom: 3px solid #da2012;
+}
+.projectName {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+}
+#footer {
+    position: fixed;
+    width: 100%;
+    background-color: #eb3123;
+    border-top: #da2012;
+    height: 60px;
+    padding: 20px;
+    bottom: 0;
+}
+.copyright {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+}
+#formBox {
+    width: 500px;
+    margin: 80px auto 80px auto;
+}
+label, p {
+    color: #eb3123;
+    font-weight: 700;
+}
+select {
+    margin-top: 5px;
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+
+}
+input[type=date] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+input[type=radio] {
+    margin-top: 10px;
+}
+.boxStyle {
+    margin: 5px;
+}
+#zamowienie {
+    margin-bottom: 100px;
+}
+table {
+    width: 500px;
+    margin: 10px auto 10px auto;
+}
+th, td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 0px;
+}
+.infoBox {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+.color {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    color: #eb3123;
+    text-align: center;
+}
+textarea {
+    width: 500px;
+    height: 120px;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+textarea::placeholder {
+    font-weight: 700;
+    font-size: 14px;
+    color: #eb3123;
+    text-transform: uppercase;
+}
+button {
+    width: 30%;
+    padding: 15px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    background-color: #eb3123;
+    color: #fff;
+    margin-bottom: 40px;
+}

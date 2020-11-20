@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="image/logo_1.png">
+    <link rel="stylesheet" href="style.css" type="text/css"> 
+</head>
+<body>
+    <header>
+        <div id="navBar">
+            <div class="projectName">Stwórz swój zestaw komputerowy</div>
+        </div> 
+    </header>
+    <main>
+        <div id="formBox">
+            <form>
+                <!-- Procesor -->
+            
+                    <label for="procesor">Procesor:</label> <br>
+                    <select id="procesor">
+                        <option value="Intel Core I5-9600K" data-price="1059">Intel Core I5-9600K(1059zł)</option>
+                        <option value="Intel Core I7-9600K" data-price="1799">Intel Core I7-9700K(1799zł)</option>
+                        <option value="Intel Core I5-7500" data-price="800">Intel Core I5-7500(800zł)</option>
+                        <option value="Ryzen 5 3600" data-price="799">Ryzen 5 3600(799zł)</option>
+                        <option value="Ryzen 7 3700X" data-price="1379">Ryzen 7 3700X(1379zł)</option>
+                    </select>
+                    <label for="oem">OEM:</label>
+                    <input type="radio" name="wersja" id="oem" value="OEM" required>
+                    <label for="box">BOX:</label>
+                    <input type="radio" name="wersja" id="box" value="BOX" required>
+                </p>
+                <!-- Pamięć RAM -->
+                <p>
+                    <label for="ram">Pamięć RAM:</label> <br>
+                    <select id="ram">
+                        <option value="Adata">Adata</option>
+                        <option value="Patriot">Patriot</option>
+                        <option value="GoodRam">GoodRam</option>
+                        <option value="Corsair">Corsair</option>
+                        <option value="HyperX">HyperX</option>
+                    </select>
+                    <label for="ram1">8GB(199zł)</label>
+                    <input type="radio" name="ram" id="cena" value="8" data-price="199" required>
+                    <label for="ram2">16GB(439zł)</label>
+                    <input type="radio" name="ram" id="cena2" value="16" data-price="439" required>
+                    <label for="ram3">32GB(799zł)</label>
+                    <input type="radio" name="ram" id="cena3" value="32" data-price="799" required>
+                </p>
+                <!-- Płyta główna -->
+                <p>
+                    <label for="plytaGlowna">Płyta główna:</label> <br>
+                    <select id="plytaGlowna">
+                        <option value="MSI B450-A PRO MAX AMD" data-price="419">MSI B450-A PRO MAX AMD(419zł)</option>
+                        <option value="Gigabyte B450M DS3H AMD" data-price="299">Gigabyte B450M DS3H AMD(299zł)</option>
+                        <option value="Gigabyte Z390 GAMING X INTEL" data-price="599">Gigabyte Z390 GAMING X INTEL(599zł)</option>
+                        <option value="MSI MPG Z390 GAMING PLUS INTEL" data-price="589">MSI MPG Z390 GAMING PLUS INTEL(589zł)</option>
+                        <option value="MSI B365M PRO-VDH INTEL" data-price="339">MSI B365M PRO-VDH INTEL (339zł)</option>
+                    </select>
+                </p>
+                <!-- Karta graficzna -->
+                <p>
+                    <label for="kartaGraficzna">Karta graficzna:</label> <br>
+                    <select id="kartaGraficzna">
+                        <option value="Gigabyte GeForce GTX 1660 SUPER" data-price="1149">Gigabyte GeForce GTX 1660 SUPER GAMING OC(1149zł)</option>
+                        <option value="MSI Geforce RTX 2060 SUPER GAMING X 8GB GDDR6" data-price="1999">MSI Geforce RTX 2060 SUPER GAMING X 8GB GDDR6(1999zł)</option>
+                        <option value="Gigabyte GeForce RTX 2080 SUPER AORUS 8GB GDDR6" data-price="3699">Gigabyte GeForce RTX 2080 SUPER AORUS 8GB GDDR6(3699zł)</option>
+                        <option value="MSI Geforce RTX 2070 SUPER GAMING X TRIO 8GB GDDR6X" data-price="2759">MSI Geforce RTX 2070 SUPER GAMING X TRIO 8GB GDDR6(2759zł)</option>
+                        <option value="MSI Radeon RX 570 ARMOR OC 8GB GDDR5" data-price="799">MSI Radeon RX 570 ARMOR OC 8GB GDDR5(799zł)</option>
+                    </select>
+                </p>
+                <!-- Zasilacz -->
+                <p>
+                    <label for="zasilacz">Zasilacz:</label> <br>
+                    <select id="zasilacz">
+                        <option value="SilentiumPC Elementum E2 450W 80 Plus" data-price="139">SilentiumPC Elementum E2 450W 80 Plus(139zł)</option>
+                        <option value="be quiet! System Power 9 500W 80 Plus Bronze" data-price="219">be quiet! System Power 9 500W 80 Plus Bronze(219zł)</option>
+                        <option value="SilentiumPC Supremo M2 550W 80 Plus Gold" data-price="289">SilentiumPC Supremo M2 550W 80 Plus Gold(289zł)</option>
+                        <option value="SilentiumPC Vero M2 600W 80 Plus Bronze" data-price="239">SilentiumPC Vero M2 600W 80 Plus Bronze(239zł)</option>
+                        <option value="SilentiumPC Supremo FM2 750W 80 Plus Gold" data-price="399">SilentiumPC Supremo FM2 750W 80 Plus Gold(399zł)</option>
+                    </select>
+                </p>
+                <!-- Obudowa -->
+                <p>
+                    <label for="obudowa">Obudowa:</label> <br>
+                    <select id="obudowa">
+                        <option value="SilentiumPC Armis AR7X TG RGB" data-price="429">SilentiumPC Armis AR7X TG RGB(429zł)</option>
+                        <option value="SilentiumPC Signum SG1 TG" data-price="199">SilentiumPC Signum SG1 TG(199zł)</option>
+                        <option value="SilentiumPC Regnum RG4T Pure Black" data-price="209">SilentiumPC Regnum RG4T Pure Black(209zł)</option>
+                        <option value="SilentiumPC Signum SG1X TG RGB" data-price="289">SilentiumPC Signum SG1X TG RGB(289zł)</option>
+                        <option value="be quiet! Pure Base 500" data-price="319">be quiet Pure Base 500(319zł)</option>
+                    </select>
+                </p>
+                <!-- Dysk HDD -->
+                <p>
+                    <label for="dyskHDD">Dysk HDD:</label> <br>
+                    <select id="dyskHDD">
+                        <option value="Dysk HDD 500GB" data-price="120">Dysk HDD 500GB(120zł)</option>
+                        <option value="Dysk HDD 1000GB" data-price="175">Dysk HDD 1000GB(175zł)</option>
+                    </select>
+                </p>
+                <!-- Dysk SSD -->
+                <p>
+                    <label for="dyskSSD">Dysk SSD:</label> <br>
+                    <select id="dyskSSD">
+                        <option value="SSD 128GB" data-price="150">SDD 128GB(150zł)</option>
+                        <option value="SSD 250GB" data-price="240">SSD 250GB(240zł)</option>
+                        <option value="SSD 500GB" data-price="350">SSD 500GB(350zł)</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="chlodzenie">Chłodzenie procesora:</label> <br>
+                    <select id="chlodzenie">
+                        <option value="SilentiumPC Fera 3 120mm" data-price="105">SilentiumPC Fera 3 120mm(105zł)</option>
+                        <option value="SilentiumPC Fortis 3 140mm" data-price="149">SilentiumPC Fortis 3 140mm(149zł)</option>
+                        <option value="be quiet! Dark Rock Pro 4 120/135mm" data-price="339">be quiet! Dark Rock Pro 4 120/135mm(339zł)</option>
+                        <option value="SilentiumPC Navis RGB 240 2x120mm" data-price="319">SilentiumPC Navis RGB 240 2x120mm(319zł)</option>
+                        <option value="NZXT Kraken X62 RGB 2x140mm" data-price="685">NZXT Kraken X62 RGB 2x140mm(685zł)</option>
+                    </select>
+                </p>
+                <!-- Dodatkowe elementy -->
+                <p>
+                    <p>Dodatkowe elementy: </p> 
+                    <label>Klawiatura(100zł)<input type="checkbox" name="" id="klawiatura" value="Logitech" data-price="100" class="boxStyle"></label> <br>
+                    <label>Myszka(80zł)<input type="checkbox" name="" id="myszka" value="SteelSeries" data-price="80" class="boxStyle"></label> <br>
+                    <label>Podświetlnie LED <input type="color" name="" id="color" value="#000000" class="boxStyle"></label>
+                </p>
+                <!-- Data dostawy -->
+                <p>
+                    <label>Data dostawy: <br><input type="date" name="dataDostawy" id="data" required></label>
+                </p>
+                <!-- Dodatkowe informacje -->
+                <p>
+                    <textarea name="info" id="info" cols="50" rows="10" placeholder="Dodatkowe informacje..."></textarea>
+                </p>
+                <!-- button -->
+                <button type="submit" onclick="document.getElementById('zamowienie').style.display = 'block'">Generuj</button>
+                </form>
+        </div>
+    </main>
+    <div id="zamowienie" style="display: none;">
+    <p class="color">Twoje zamówienie: </p>
+       <table>
+           <tr>
+               <th>Komponent</th>
+               <th>Nazwa</th>
+               <th>Cena</th>
+           </tr>
+           <tr>
+               <td>Procesor</td>
+               <td id="procesorTable"></td>
+               <td id="procesorPriceTable"></td>
+           </tr>
+           <tr>
+               <td>Pamięć RAM</td>
+               <td id="ramTable"></td>
+               <td id="ramPriceTable"></td>
+           </tr>
+           <tr>
+               <td>Płyta Główna</td>
+               <td id="plytaGlownaTable"></td>
+               <td id="plytaGlownaPriceTable"></td>
+           </tr>
+           <tr>
+               <td>Karta Graficzna</td>
+               <td id="kartaGraficznaTable"></td>
+               <td id="kartaGraficznaPriceTable"></td>
+           </tr>
+           <tr>
+               <td>Zasilacz</td>
+               <td id="zasilaczTable"></td>
+               <td id="zasilaczPriceTable"></td>
+           </tr>
+           <tr>
+               <td>Obudowa</td>
+               <td id="obudowaTable"></td>
+               <td id="obudowaPriceTable"></td>
+           </tr>
+           <tr>
+               <td>Dysk HDD</td>
+               <td id="hddTable"></td>
+               <td id="hddPriceTable"></td>
+           </tr>
+           <tr>
+               <td>Dysk SSD</td>
+               <td id="ssdTable"></td>
+               <td id="ssdPriceTable"></td>
+           </tr>
+           <tr>
+               <td>Chłodzenie Procesora</td>
+               <td id="coolerTable"></td>
+               <td id="coolerPriceTable"></td>
+           </tr>
+           <tr>
+               <td>Klawiatura</td>
+               <td id="klawiaturaTable"></td>
+               <td id="klawiaturaPriceTable"></td>
+           </tr>
+           <tr>
+               <td>Myszka</td>
+               <td id="myszkaTable"></td>
+               <td id="myszkaPriceTable"></td>
+           </tr>
+           <tr>
+               <th colspan="2">Podsumowanie</th>
+               <th id="allPriceTable"></th>
+           </tr>
+           <tr>
+           </tr>
+       </table>
+       <div class="infoBox">
+           <p class="color">Data dostawy</p>
+           <p id="dataDostawyInfo"></p>
+       </div>
+       <div class="infoBox">
+           <p class="color">Dodatkowe informacje</p>
+           <p id="infoContent"></p>
+       </div>
+    </div>
+    <footer>
+        <div id="footer" class="copyright">DawidHochajzer&copy;</div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
